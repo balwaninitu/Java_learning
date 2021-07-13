@@ -1,5 +1,7 @@
 package basics;
 
+import basics2.ExampleClass;
+
 public class LearningMethods {
 
     public static void main(String[] args) {
@@ -11,6 +13,8 @@ public class LearningMethods {
         MyUtils.sumTwoNumbers(5,7);
         int myVar = MyUtils.add10(99)+1000-50;
         System.out.println(myVar);
+
+        ExampleClass.sayHello();
 
 
 
