@@ -2,11 +2,12 @@ package basics;
 
 public class MyUtils {
 
-    public static void printSomeStuff(String argument){
-        System.out.println("Gibberish bla bla " + argument);
+    public static String printSomeStuff(String argument){
+        return argument;
+        //System.out.println("Gibberish bla bla " + argument);
     }
     public static void printSomeStuff(int argument){
-        System.out.println("Integer parsed in " + argument);
+        System.out.println(argument);
     }
 
     public static void sumTwoNumbers(int firstNum, int secondNum){
