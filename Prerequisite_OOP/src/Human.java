@@ -1,15 +1,20 @@
 
 public class Human {
-
     String name;
     int age;
     int heightInInches;
     String eyeColor;
 
+
     //constructor method has same name as class name
     //this method use to construct human object
     //constructor is intended to provide instruction how the object of the class constructed
     public Human(){
+        age = 5;
+        eyeColor = "hazel";
+        heightInInches = 72;
+        name = "Tom Zsaboo";
+
 
     }
 
