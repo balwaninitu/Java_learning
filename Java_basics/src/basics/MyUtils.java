@@ -19,4 +19,8 @@ public class MyUtils {
        return result;
 
     }
+
+    private static void printSome(int param){
+        System.out.println(param);
+    }
 }
