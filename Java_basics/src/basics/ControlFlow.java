@@ -41,10 +41,33 @@ public class ControlFlow {
         }
         System.out.println(opinion);
 
+        int month = 4;
+
+        String monthString;
+
+        switch (month) {
+
+            case 1:
+                monthString = "January";
+                break;
+            case 2:
+                monthString = "Feb";
+                break;
+            case 3:
+                monthString = "Mar";
+                break;
+            case 4:
+                monthString = "Apr";
+                break;
+            default:monthString = "Unknown Month";
+            break;
+
+
+        }
+        System.out.println(monthString);
 
     }
-
-    }
+}
 
 
 
