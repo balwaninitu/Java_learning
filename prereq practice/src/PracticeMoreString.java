@@ -6,7 +6,11 @@ public class PracticeMoreString {
 
         int a = str.indexOf("there");
 
+        int b = str.lastIndexOf("Modi");
+
+
         System.out.println(a);
+        System.out.println(b);
 
 
     }
