@@ -1,4 +1,11 @@
-public class Animal {
+
+/*for abstract class no need to create intances it is usually
+parent class and expects its child class to implement abstract method
+
+ */
+
+
+public abstract class Animal {
     String name;
     String gender;
     int age;
@@ -30,7 +37,7 @@ public class Animal {
 
     }
 
-
+   public abstract void move();
 
 
 

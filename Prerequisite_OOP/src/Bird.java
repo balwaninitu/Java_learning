@@ -5,6 +5,11 @@ public class Bird extends Animal {
         super(name, gender, age, weight);
     }
 
+    @Override
+    public void move() {
+        System.out.println("The bird is flying");
+    }
+
 /*
 Any class that that implements that interface it becomes compulsory for
 that class to implements method that defined in the interface
