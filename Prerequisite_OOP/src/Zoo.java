@@ -2,6 +2,8 @@ public class Zoo {
 
 
     public static void main(String[] args) {
+//objects are runtime concept, they dont exist untill application runs
+        //animal1 is instance variable which has memory address for object which get created based
 
         Animal animal1 = new Animal("Dog", "F", 11, 12.76);
         Animal animal2 = new Animal("Cat", "M", 4, 4.5);
@@ -18,11 +20,10 @@ public class Zoo {
         System.out.println(animal1.sound("Moo"));
 
 
-        Bird bird1 = new Bird("Humming", "F", 2,2);
-        Bird bird2 = new Bird("Cukkoo", "M", 4,2);
+        Bird bird1 = new Bird();
         bird1.fly();
 
-        Fish fish1 = new Fish("Dory","f", 4,7.8);
+        Fish fish1 = new Fish();
         fish1.swim();
 
 
