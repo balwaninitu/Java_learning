@@ -8,8 +8,12 @@ public class LoopsPractice {
         int count = 0;
 
         while(count <=10){
-            System.out.println("Nitu");
+            System.out.println("Nitu " +count);
             count = count +1;
+
+            if(count == 4){
+                break;
+            }
         }
     }
 }
