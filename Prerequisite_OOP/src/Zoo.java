@@ -21,7 +21,7 @@ public class Zoo {
 
 
         Bird bird1 = new Bird("Cukku", "F", 2,1.5);
-        bird1.fly();
+       // bird1.fly();
         bird1.description();
 
         Fish fish1 = new Fish("Dory", "M", 3,6.7);
@@ -29,7 +29,7 @@ public class Zoo {
         fish1.swim();
 
         Chicken chicken1 = new Chicken("chick", "m", 2,34);
-        chicken1.fly();
+       chicken1.description();
 
 
     }

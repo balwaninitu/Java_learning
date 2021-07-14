@@ -6,7 +6,5 @@ public class Chicken extends Bird {
 
     //overriding the method defined in Bird
     // means replacing method which this class is inheriting
-    public void fly(){
-        System.out.println("Not able to fly...");
-    }
+
 }

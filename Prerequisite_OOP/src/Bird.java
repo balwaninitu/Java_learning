@@ -5,7 +5,10 @@ public class Bird extends Animal {
         super(name, gender, age, weight);
     }
 
-    public void fly(){
-        System.out.println("I am flying...");
-    }
+/*
+Any class that that implements that interface it becomes compulsory for
+that class to implements method that defined in the interface
+ */
+
+
 }
