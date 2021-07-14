@@ -9,13 +9,14 @@ public class Human {
     //constructor method has same name as class name
     //this method use to construct human object
     //constructor is intended to provide instruction how the object of the class constructed
-    public Human(){
-        age = 5;
-        eyeColor = "hazel";
-        heightInInches = 72;
-        name = "Tom Zsaboo";
-
-
+    //dynamic constructor
+    //this keyword is variable in java and it points to the current object
+    //this keyword reference to instance of class
+    public Human(String name, int age, int heightInInches, String eyeColor) {
+        this.name = name;
+        this.age = age;
+        this.heightInInches = heightInInches;
+        this.eyeColor = eyeColor;
     }
 
     //methods
