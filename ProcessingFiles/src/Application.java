@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Application {
 
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) {
 
 //        for (int i=0; i <=3; i++){
 //            Scanner input = new Scanner(System.in);
@@ -12,14 +12,21 @@ public class Application {
 //            String enteredText = input.nextLine();
 //            System.out.println(enteredText);
   //      }
-
+        try {
         File file = new File("myfile.txt");
-        Scanner input = new Scanner(file);
+        Scanner input = null;
+
+            input = new Scanner(file);
+
         while (input.hasNextLine()){
             String line = input.nextLine();
             System.out.println(line);
         }
         input.close();
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
 
 
 
