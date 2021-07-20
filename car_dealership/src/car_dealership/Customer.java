@@ -7,6 +7,12 @@ public class Customer {
     private String address;
     private double cashOnHand;
 
+    public Customer(String name, String address, double cashOnHand) {
+        this.name = name;
+        this.address = address;
+        this.cashOnHand = cashOnHand;
+    }
+
     //created setter and getter for the instances of object
     public String getName() {
         return name;
