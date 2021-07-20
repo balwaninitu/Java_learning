@@ -25,10 +25,18 @@ public class Application {
         input.close();
 
         } catch (FileNotFoundException e) {
+            System.out.println("File not found");
+        //    e.printStackTrace();
+        }
+
+        MyFileUtils myutil = new MyFileUtils();
+        try {
+            System.out.println(myutil.substract10FromLargeNum(8));
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
-
-
     }
+
+
 }
