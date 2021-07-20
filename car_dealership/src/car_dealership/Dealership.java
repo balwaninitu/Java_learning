@@ -8,10 +8,16 @@ public class Dealership {
 
         Vehicle vehicle = new Vehicle("Honda", "Accord", 15000);
 
+       // Vehicle vehicle = new Vehicle("BMW", "MB", 20000);
 
         Employee emp = new Employee();
 
         cust1.purchaseCar(vehicle, emp, false);
+
+        Vehicle car = new Vehicle("BMW", "MB", 20000);
+
+        boolean value = car.equals(vehicle);
+        System.out.println(value);
 
 
         /**
