@@ -1,6 +1,7 @@
 package lesson2;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 
 public class Application {
 
@@ -26,7 +27,8 @@ public class Application {
 //            System.out.println(value);
 //        }
 
-        ArrayList<Vehicle> vehicles = new ArrayList<Vehicle>();
+        //ArrayList<Vehicle> vehicles = new ArrayList<Vehicle>();
+        LinkedList<Vehicle> vehicles = new LinkedList<Vehicle>();
 
         //two approach to initialize, first has variable as vehicle1
         Vehicle vehicle2 = new Vehicle("Toyota", "Camery", 15000, false);
@@ -37,9 +39,10 @@ public class Application {
         vehicles.add(new Vehicle("Jeep", "Wrangler", 25000, true));
 
         for (Vehicle car : vehicles) {
-            System.out.println(car.getMake());
-            System.out.println(car.getModel());
-            System.out.println(car.getPrice());
+//            System.out.println(car.getMake());
+//            System.out.println(car.getModel());
+//            System.out.println(car.getPrice());
+            System.out.println(car);
         }
 
 

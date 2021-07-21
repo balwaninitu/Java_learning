@@ -6,6 +6,17 @@ public class Vehicle {
     int price;
     boolean fourWDrive;
 
+    //tostring method help to print data in more readable way
+    @Override
+    public String toString() {
+        return "Vehicle{" +
+                "make='" + make + '\'' +
+                ", model='" + model + '\'' +
+                ", price=" + price +
+                ", fourWDrive=" + fourWDrive +
+                '}';
+    }
+
     public Vehicle(String make, String model, int price, boolean fourWDrive) {
         this.make = make;
         this.model = model;
