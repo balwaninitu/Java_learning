@@ -1,38 +1,31 @@
 package com.nitu.learningfilereader;
 
-//import java.io.File;
-//import java.io.FileReader;
-
-import java.io.*;
+import java.util.ArrayList;
 
 public class Application {
 
     public static void main(String[] args) {
 
-        File file = new File("myfile1.txt");
+    // ArrayList collection framework
+    ArrayList words = new ArrayList();
+    words.add("Hello");
+    words.add("there");
+    words.add(10);
+        words.add(9);
+    words.add(12.00);
+    words.add('H');
+   // words.remove(0);
 
-        //in java7 features if there is resources like file in block of catch it will close automatically
-        //it wont work in java6 but only java7 onwards
-        try (FileReader fileReader = new FileReader(file);
-        BufferedReader bufferedReader  = new BufferedReader(fileReader);){
+   //String item1 = (String) words.get(0)
+        //Object item1 = words.get(0);
+   // Object item2 = words.get(1);
+    int item1 = (int) words.get(2);
+        int item2 = (int) words.get(3);
+        System.out.println(item1 + item2);
 
-            String line = bufferedReader.readLine();
-
-            while(line != null){
-                System.out.println(line);
-                line = bufferedReader.readLine();
-            }
-
-        } catch (FileNotFoundException e) {
-            System.out.println("File not found");
-        } catch (IOException e) {
-            System.out.println("Problem reading the file" +file.getName());
-
-        }
-
-
-        }
 
     }
+
+}
 
 
