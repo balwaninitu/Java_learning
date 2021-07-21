@@ -10,10 +10,11 @@ public class Application {
     public static void main(String[] args) {
 
         File file = new File("myfile1.txt");
-        BufferedReader bufferedReader = null;
-        try {
-            FileReader fileReader = new FileReader(file);
-            bufferedReader  = new BufferedReader(fileReader);
+
+        //in java7 features if there is resources like file in block of catch it will close automatically
+        //it wont work in java6 but only java7 onwards
+        try (FileReader fileReader = new FileReader(file);
+        BufferedReader bufferedReader  = new BufferedReader(fileReader);){
 
             String line = bufferedReader.readLine();
 
@@ -21,23 +22,17 @@ public class Application {
                 System.out.println(line);
                 line = bufferedReader.readLine();
             }
+
         } catch (FileNotFoundException e) {
             System.out.println("File not found");
         } catch (IOException e) {
             System.out.println("Problem reading the file" +file.getName());
-            //finally block will always run, usually resource can close here
-        }finally {
-            try {
-                bufferedReader.close();
-            } catch (IOException e) {
-                System.out.println("Unable to close file" + file.getName());
-            } catch (NullPointerException ex){
-                System.out.println("File was probably never opened" +ex);
-            }
+
+        }
 
 
         }
 
     }
 
-}
+
