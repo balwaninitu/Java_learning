@@ -29,12 +29,7 @@ public class Application {
         //    e.printStackTrace();
         }
 
-        MyFileUtils myutil = new MyFileUtils();
-        try {
-            System.out.println(myutil.substract10FromLargeNum(8));
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+
 
     }
 
