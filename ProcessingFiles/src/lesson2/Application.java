@@ -8,7 +8,7 @@ public class Application {
 
     public static void main(String[] args) {
 
-        ArrayList<String> animals = new ArrayList<String>();
+        List<String> animals = new ArrayList<String>();
         //populate animals
         animals.add("Lion");
         animals.add("Cat");
@@ -27,6 +27,10 @@ public class Application {
 //        for (String value : animals) {
 //            System.out.println(value);
 //        }
+        /**
+         * LinkedList has removeFirst method
+         * ArrayList doesnt have removeFirst method
+         */
 
         //ArrayList<Vehicle> vehicles = new ArrayList<Vehicle>();
        // LinkedList<Vehicle> vehicles = new LinkedList<Vehicle>();
@@ -40,13 +44,22 @@ public class Application {
         vehicles.add(vehicle2);
         vehicles.add(new Vehicle("Jeep", "Wrangler", 25000, true));
 
-        for (Vehicle car : vehicles) {
+       // for (Vehicle car : vehicles) {
 //            System.out.println(car.getMake());
 //            System.out.println(car.getModel());
 //            System.out.println(car.getPrice());
-            System.out.println(car);
+       //     System.out.println(car);
+      //  }
+        printElements(vehicles);
+        printElements(animals);
+
+
+    }
+//List is interface for array and linkedlist
+    public static void printElements(List someList){
+        for (int i = 0; i <someList.size(); i++){
+            System.out.println(someList.get(i));
+
         }
-
-
     }
 }
