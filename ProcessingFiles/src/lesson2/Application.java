@@ -2,6 +2,7 @@ package lesson2;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 
 public class Application {
 
@@ -28,7 +29,8 @@ public class Application {
 //        }
 
         //ArrayList<Vehicle> vehicles = new ArrayList<Vehicle>();
-        LinkedList<Vehicle> vehicles = new LinkedList<Vehicle>();
+       // LinkedList<Vehicle> vehicles = new LinkedList<Vehicle>();
+        List<Vehicle> vehicles = new LinkedList<Vehicle>();
 
         //two approach to initialize, first has variable as vehicle1
         Vehicle vehicle2 = new Vehicle("Toyota", "Camery", 15000, false);
