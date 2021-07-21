@@ -9,7 +9,7 @@ public class Application {
 
     public static void main(String[] args) {
 
-        File file = new File("myfile.txt");
+        File file = new File("myfile1.txt");
         BufferedReader bufferedReader = null;
         try {
             FileReader fileReader = new FileReader(file);
@@ -31,6 +31,8 @@ public class Application {
                 bufferedReader.close();
             } catch (IOException e) {
                 System.out.println("Unable to close file" + file.getName());
+            } catch (NullPointerException ex){
+                System.out.println("File was probably never opened" +ex);
             }
 
 
