@@ -36,7 +36,10 @@ public class Application {
         numbers.add(10);
         numbers.add(34);
         numbers.add(100);
-
+        numbers.remove(2);
+        //empty bracket will remove first element
+        //numbers.remove();
+       numbers.removeFirst();
         for (int number : numbers) {
             System.out.println(number);
 
