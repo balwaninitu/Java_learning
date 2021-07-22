@@ -55,6 +55,20 @@ public class Application {
         //System.out.println(list1);
         //System.out.println(hasValue);
 
+        HashSet<Employee> hashSet1 = new HashSet<Employee>();
+        hashSet1.add(new Employee("Mike",12000,"Dev"));
+        hashSet1.add(new Employee("Tim",35000,"OPS"));
+        hashSet1.add(new Employee("Job",40000,"DR"));
+        hashSet1.add(new Employee("Jan",7000,"Prod"));
+
+        ArrayList<Employee> myList1 = new ArrayList<Employee>(hashSet1);
+
+        Collections.sort(myList1);
+        System.out.println(myList1);
+
+
+
+
 
     }
 }
