@@ -21,6 +21,9 @@ public class Application {
         dictionary.put("Joy", "a feeling of great pleasure and happiness");
         dictionary.put("Confidence", "the state of feeling certain about the truth of something.");
 
+        //map is not useful to store duplicate values as it will overwrite value for particular key
+        dictionary.put("Brilliant", "xxxx");
+
 //        for (String word: dictionary.keySet()){
 //            //print values
 //            System.out.println(dictionary.get(word));
